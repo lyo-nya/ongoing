@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ongoing</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+            }
+
+            canvas {
+                display: block;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        </style>
+    <link rel="modulepreload" href="/ongoing-57c956116aec74fc.js" crossorigin="anonymous" integrity="sha384-3nX0VPr1xlKcnXppvJWUs4neepzXa7i1Dw2j9T9tAPDab7wdDWcBtVOEC6BaCdYF"><link rel="preload" href="/ongoing-57c956116aec74fc_bg.wasm" crossorigin="anonymous" integrity="sha384-KYcW7jZjzJKnmsDB3iv95IUV8cEEOpv9+sYGwUzb3c0119WMjSGdQ6uOSloA3Mye" as="fetch" type="application/wasm"></head>
+    <body>
+<script type="module">
+import init, * as bindings from '/ongoing-57c956116aec74fc.js';
+const wasm = await init({ module_or_path: '/ongoing-57c956116aec74fc_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
